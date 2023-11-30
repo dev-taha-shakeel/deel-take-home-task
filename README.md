@@ -50,12 +50,13 @@ The exercise requires [React](https://reactjs.org/) and [Node.js](https://nodejs
 ## Full stack feature to implement
 
 ### User flow
+
 1. User will be presented a drop-down of profiles (of type `client`), with a login button
 1. User will select a profile, and log in
 1. User will be presented the main interface with the following elements:
-    1. User will have buttons available to deposit pre-set amounts (1, 5, 10, 50, 100, 500) on the interface at all times — clicking these buttons will create a deposit and update the balance
-    1. User will see the logged in profile's balance on the interface at all times
-    1. User will be presented a home screen with an auto-complete field which will also be populated by profiles (of type `contractor`) with the label "Pay Jobs for…" and a button labeled "Continue"
+   1. User will have buttons available to deposit pre-set amounts (1, 5, 10, 50, 100, 500) on the interface at all times — clicking these buttons will create a deposit and update the balance
+   1. User will see the logged in profile's balance on the interface at all times
+   1. User will be presented a home screen with an auto-complete field which will also be populated by profiles (of type `contractor`) with the label "Pay Jobs for…" and a button labeled "Continue"
 1. User will be able to select a profile and continue
 1. User will be presented with a list of paid & unpaid jobs for the selected contractor
 1. User will be able to pay an unpaid job with a button click. User should not be able to pay a job for which the paying profile does not have sufficient balance.
@@ -70,7 +71,7 @@ Below is a list of the required API's for the application.
 
 1. **_POST_** `/jobs/:job_id/pay` - Pay for a job, a client can only pay if his balance >= the amount to pay. The amount should be moved from the client's balance to the contractor balance.
 
-1. **_POST_** `/balances/deposit/:userId` - Deposits money into the the the balance of a client, a client can't deposit more than 25% his total of jobs to pay. (at the deposit moment)
+1. **_POST_** `/34w/:userId` - Deposits money into the the the balance of a client, a client can't deposit more than 25% his total of jobs to pay. (at the deposit moment)
 
 1. **_GET_** `/admin/best-profession?start=<date>&end=<date>` - Returns the profession that earned the most money (sum of jobs paid) for any contactor that worked in the query time range.
 

@@ -1,0 +1,21 @@
+
+.user-header {
+  background-color: black;
+}
+
+.paper-container {
+  padding: 10px;
+  box-shadow: "0 4px 8px rgba(0, 0, 0, 0.1)";
+  height: 100%;
+  margin-top: 50px;
+  min-height: 200px;
+  .heading {
+    text-align: center;
+    padding: 10px;
+  }
+  .deposit-button-container {
+    display: 'flex';
+    flex-direction: 'column';
+    
+  }
+}
