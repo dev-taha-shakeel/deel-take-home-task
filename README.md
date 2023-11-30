@@ -108,3 +108,15 @@ It would be great for example if you'd write some unit test / simple frontend de
 When you have finished the assignment, zip your repo (make sure to include .git folder) and send us the zip.
 
 Thank you and good luck! 🙏
+
+## Additional Things Backend
+
+1. Add migrations scripts
+2. Add Swagger API documentation.
+3. Security checks with library like Helmet
+4. Enforcing 100% code coverage backend.
+5. Adding Typescript support to backend.
+6. Better Validations.
+7. introduction of env files so different logging or DB credentials.
+8. Introduce logging.
+9. Dockerise the project.
